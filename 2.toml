@@ -1,0 +1,15 @@
+serverAddr = 'dropboxapp.life'
+serverPort = 81
+
+[[proxies]]
+name = "test-tcp"
+type = "tcp"
+localIP = "127.0.0.1"
+remotePort = 6005
+transport.useEncryption = true
+transport.useCompression = true
+[proxies.plugin]
+type = "socks5"
+username = "boxin"
+password = "inthebox"
+
